@@ -24,7 +24,7 @@ where `<yourusername>` is the username you defined during installation.
 3. As listed above your Linux files will typically be stored at `\\wsl$\Ubuntu\home\<yourname>`. It's best to use this as the starting folder in Windows Terminal. Let's open the settings in PowerShell and add the following configuration line to the Ubuntu profile: 
   `"startingDirectory": "//wsl$/Ubuntu/home/<yourname>/"`
   
-4. Now that we have our settings for the terminal let's install [Fish shell](https://fishshell.com/docs/current/tutorial.html.  
+4. Now that we have our settings for the terminal let's install [Fish shell](https://fishshell.com/docs/current/tutorial.html).  
   `apt-get install fish`
   After installing fish lets try it out. Enter: `fish` in your terminal.
   You will be greeted by a prompt which means you are all set up. 
