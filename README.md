@@ -32,7 +32,7 @@ If version 2 still does not run we will try writing this command instead: `wsl -
 where `<yourusername>` is the username you defined during installation. 
 <br>
   
-3. As listed above your Linux files will typically be stored at `\\wsl$\Ubuntu\home\<yourname>`. It's best to use this as the starting folder in Windows Terminal. Let's open the settings in PowerShell and add the following configuration line to the Ubuntu profile: 
+3. As listed above your Linux files will typically be stored at `\\wsl$\Ubuntu\home\<yourname>`. It's best to use this as the starting folder in Windows Terminal. Let's open the settings in Windows Terminal and add the following configuration line to the Ubuntu profile: 
   ``` 
   "startingDirectory": "//wsl$/Ubuntu/home/<yourname>/"
   ```
