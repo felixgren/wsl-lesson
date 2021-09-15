@@ -18,20 +18,24 @@ Command | Description
 
 `\\wsl$\Ubuntu` | This is the Ubuntu root directory  
 `\\wsl$\Ubuntu\home\<yourname>` This is where your personal Linux files typically will be stored at
+`sudo apu update` | update wsl 
 
 ### Set up
 
 1. Let's get started by setting up WSL the way we want it! First we want to set WSL as our default version. 
 Open up PowerShell and write `wsl --set-default-version 2`
 If version 2 still does not run we will try writing this command instead: `wsl --set-version Ubuntu-20.04`
+<br>
 
 2. Unfortunately, Ubuntu will now use root as the default user. We don't want that! We want your username to be the default user. Enter the following command: `ubuntu config --default-user <yourname>`
 where `<yourusername>` is the username you defined during installation. 
+<br>
   
 3. As listed above your Linux files will typically be stored at `\\wsl$\Ubuntu\home\<yourname>`. It's best to use this as the starting folder in Windows Terminal. Let's open the settings in PowerShell and add the following configuration line to the Ubuntu profile: 
   ``` 
   "startingDirectory": "//wsl$/Ubuntu/home/<yourname>/"
   ```
+  <br>
   
 4. Now that we have our settings for the terminal let's install [Fish shell](https://fishshell.com/docs/current/tutorial.html).  
   `apt-get install fish`
@@ -42,7 +46,7 @@ where `<yourusername>` is the username you defined during installation.
   ``` 
   chsh -s /usr/bin/fish
   ``` 
-  
+  <br>
   5. With WSL you can easily access your windows system files whenever you want. This is defined by `/mnt/` 
 
   Type `/mnt/c` to access your C: harddrive. 
@@ -52,3 +56,6 @@ where `<yourusername>` is the username you defined during installation.
   If you want to get back to Ubuntu from here you can simply type `cd` 
   
   6. Now you can start adding folders to your Ubuntu if you want. For example you can add a workspace folder for your projects and a lessons folder for your lessons. 
+  <br> <br> 
+  7. Don't forget to update WSL from time to time:
+  `sudo apt update`
