@@ -43,7 +43,7 @@ where `<yourusername>` is the username you defined during installation.
   chsh -s /usr/bin/fish
   ``` 
   
-  5. With WSL you can easily access your windows system files whenever you want. This is defiened by `/mnt/` 
+  5. With WSL you can easily access your windows system files whenever you want. This is defined by `/mnt/` 
 
   Type `/mnt/c` to access your C: harddrive. 
   
