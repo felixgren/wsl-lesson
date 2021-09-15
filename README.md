@@ -51,4 +51,4 @@ where `<yourusername>` is the username you defined during installation.
   
   If you want to get back to Ubuntu from here you can simply type `cd` 
   
-  6. Now you can start adding folders to your Ubuntu if you want. For example you can att a workspace folder for your projects and a lessons folder for your lessons. 
+  6. Now you can start adding folders to your Ubuntu if you want. For example you can add a workspace folder for your projects and a lessons folder for your lessons. 
