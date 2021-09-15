@@ -15,10 +15,11 @@ Command | Description
 `explorer.exe .` | Opens up the graphical interface for the map you are in. <br>
 `wsl`  |  Opens up your default WSL Linux distro if you are in PowerShell <br>
 `exit`  |  Takes you back to PowerShell
+`sudo apu update` | update WSL
 
-`\\wsl$\Ubuntu` | This is the Ubuntu root directory  
+`\\wsl$\Ubuntu`  This is the Ubuntu root directory  
 `\\wsl$\Ubuntu\home\<yourname>` This is where your personal Linux files typically will be stored at
-`sudo apu update` | update wsl 
+
 
 ### Set up
 
