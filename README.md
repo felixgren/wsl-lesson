@@ -2,8 +2,15 @@
 
 <img src="https://media0.giphy.com/media/A06UFEx8jxEwU/giphy.gif?cid=ecf05e473yvpc9epyt2bokina5hjf0372ocyavxodfdvsawz&rid=giphy.gif&ct=g" />
 
-### Commands 
+-   :books: Documentation
+  -   [WSL docs](https://docs.microsoft.com/en-us/windows/wsl/#get-started)
 
+-   :link: Links
+-   [Why WSL](https://devblogs.microsoft.com/premier-developer/why-developers-should-install-wsl-today/)
+
+### Commands 
+Command | Description
+------- | -----------
 [`cd`](https://tldr.ostera.io/cd)  |  Change the current working directory to WSL <br>
 `explorer.exe .` | Opens up the graphical interface for the map you are in. <br>
 `wsl`  |  Opens up your default WSL Linux distro if you are in PowerShell <br>
@@ -22,7 +29,9 @@ If version 2 still does not run we will try writing this command instead: `wsl -
 where `<yourusername>` is the username you defined during installation. 
   
 3. As listed above your Linux files will typically be stored at `\\wsl$\Ubuntu\home\<yourname>`. It's best to use this as the starting folder in Windows Terminal. Let's open the settings in PowerShell and add the following configuration line to the Ubuntu profile: 
-  `"startingDirectory": "//wsl$/Ubuntu/home/<yourname>/"`
+  ``` 
+  "startingDirectory": "//wsl$/Ubuntu/home/<yourname>/"
+  ```
   
 4. Now that we have our settings for the terminal let's install [Fish shell](https://fishshell.com/docs/current/tutorial.html).  
   `apt-get install fish`
@@ -30,6 +39,16 @@ where `<yourusername>` is the username you defined during installation.
   You will be greeted by a prompt which means you are all set up. 
   
   If you'd like you can set Fish as your default shell instead of bash: 
-  `chsh -s /usr/bin/fish`
+  ``` 
+  chsh -s /usr/bin/fish
+  ``` 
   
+  5. With WSL you can easily access your windows system files whenever you want. This is defiened by `/mnt/` 
 
+  Type `/mnt/c` to access your C: harddrive. 
+  
+  Notice how fish helps you finish the syntax? 
+  
+  If you want to get back to Ubuntu from here you can simply type `cd` 
+  
+  6. Now you can start adding folders to your Ubuntu if you want. For example you can att a workspace folder for your projects and a lessons folder for your lessons. 
