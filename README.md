@@ -59,5 +59,6 @@ where `<yourusername>` is the username you defined during installation.
   
   6. Now you can start adding folders to your Ubuntu if you want. For example you can add a workspace folder for your projects and a lessons folder for your lessons. 
   <br> <br> 
-  7. Don't forget to update WSL from time to time:
-  `sudo apt update`
+  7. Don't forget to update WSL from time to time: <br> 
+  `sudo apt update` <br>
+`sudo apt upgrade`
