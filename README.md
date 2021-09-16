@@ -59,11 +59,10 @@ Command | Description
 ------- | -----------
 [`cd`](https://tldr.ostera.io/cd) | Go somewhere.
 [`pwd`](https://tldr.ostera.io/pwd) | Check where you are.
-[`cp`](https://tldr.ostera.io/cp) | Copy things.
-[`mv`](https://tldr.ostera.io/mv) | Move things.
-[`ls`](https://tldr.ostera.io/ls) | List directory contents. 
-[`mkdir`](https://tldr.ostera.io/mkdir) | Create a new folder.
+[`ls`](https://tldr.ostera.io/ls) | List folder contents. 
+[`cp`](https://tldr.ostera.io/cp) | Copy files/folders.
 [`mv`](https://tldr.ostera.io/mv) | Move or rename files/folders.
+[`mkdir`](https://tldr.ostera.io/mkdir) | Create a new folder.
 [`rm`](https://tldr.ostera.io/rm) | Remove files or folders.
 [`rmdir`](https://tldr.ostera.io/rmdir) | Removes a folder.
 [`touch`](https://tldr.ostera.io/touch) | Create files.
@@ -74,7 +73,7 @@ Command | Description
 
 ### Set up
 
-1. Let's get started by setting up WSL the way we want it! First we want to set WSL as our default version. 
+1. Let's get started by setting up WSL the way we want it! First we want to set WSL 2 as our default version. 
 Open up PowerShell and write `wsl --set-default-version 2`
 If version 2 still does not run we will try writing this command instead: `wsl --set-version Ubuntu-20.04`
 <br>
