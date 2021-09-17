@@ -78,11 +78,11 @@ Open up PowerShell and write `wsl --set-default-version 2`
 If version 2 still does not run we will try writing this command instead: `wsl --set-version Ubuntu-20.04`
 <br>
 
-2. Unfortunately, Ubuntu will now use root as the default user. We don't want that! We want your username to be the default user. Enter the following command: `ubuntu config --default-user <yourname>`
+2. If Ubuntu starts root as default user we would like to change that. We want your username to be the default user. Enter the following command: `ubuntu config --default-user <yourname>`
 where `<yourusername>` is the username you defined during installation. 
 <br>
   
-3. As listed above your Linux files will typically be stored at `\\wsl$\Ubuntu\home\<yourname>`. It's best to use this as the starting folder in Windows Terminal. Let's open the settings in Windows Terminal and add the following configuration line to the Ubuntu profile: 
+3. Your Linux files will typically be stored at `\\wsl$\Ubuntu\home\<yourname>`. It's best to use this as the starting folder in Windows Terminal. Let's open the settings in Windows Terminal and add the following configuration line to the Ubuntu profile: 
   ``` 
   "startingDirectory": "//wsl$/Ubuntu/home/<yourname>/"
   ```
@@ -100,7 +100,7 @@ where `<yourusername>` is the username you defined during installation.
   <br>
   5. With WSL you can easily access your windows system files whenever you want. This is defined by `/mnt/` 
 
-  Type `/mnt/c` to access your C: harddrive. 
+  Type `cd /mnt/c` to access your C: harddrive. 
   
   Notice how fish helps you finish the syntax? 
   
